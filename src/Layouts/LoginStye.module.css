@@ -1,0 +1,55 @@
+.CenterContainer{
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    flex-wrap: wrap;
+    margin-top: 69px;
+}
+
+.pContainer{
+    background-image: linear-gradient(to bottom right, #adb5bd, #8d99ae);
+    min-width:500px;
+    max-width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.childForm h2{
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+
+.details{
+    margin-top: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.details input{
+    margin-top: 6px;
+    width: auto;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.btnHolder{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnHolder input{
+    padding: 6px 20px;
+    border:none;
+    border-radius: 6px;
+    background-color: #e7e7e7;
+    font-size: 20px;
+}
+
+.btnHolder input:hover{
+    background-color: #edf2f4;
+}
