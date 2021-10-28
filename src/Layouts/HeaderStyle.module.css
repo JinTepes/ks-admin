@@ -2,7 +2,7 @@
     overflow: hidden;
     background-color: #34495E;
     cursor: default;
-    box-shadow: 0 10px 3px 0px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 10px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .header h2 {
@@ -22,6 +22,10 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: #2C3E50;
+}
+
+a{
+    text-decoration: none;
 }
 
 .nItem{

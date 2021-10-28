@@ -8,11 +8,16 @@ import LoginPage from './Components/Login';
 import HomePage from './Pages/Home';
 import AddItemPage from './Pages/AddItem';
 import AddItemHistory from './Pages/AddItemHistory';
+import ScreenshotsPage from './Pages/Screenshots';
+import SearchBanning from './Pages/SearchBanning';
+import HwidBan from './Pages/HwidBan';
+import BlockedLogin from './Pages/BlockedLogin';
 ///
 //styles
 import HeaderStyle from './Layouts/HeaderStyle.module.css';
 ///
 function App() {
+  const [cUser, setUser] = useState('');
   //main header
   function MainHeader() {
     return (
@@ -22,39 +27,39 @@ function App() {
           <h3>Welcome, {cUser} [ Authority: Super Administrator ]</h3>
         </div>
         <div className={HeaderStyle.navScrollDiv}>
-          <div className={HeaderStyle.nItem}>
+          <div>
             <Link to='/'>
-              <div>Home</div>
+              <div className={HeaderStyle.nItem}>Home</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
+          <div>
             <Link to='/Add-Item'>
-              <div>Add Item</div>
+              <div className={HeaderStyle.nItem}>Add Item</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
+          <div>
             <Link to='/Add-Item-History'>
-              <div>Add Item History</div>
+              <div className={HeaderStyle.nItem}>Add Item History</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
-            <Link to='/'>
-              <div>Screenshots</div>
+          <div>
+            <Link to='/Screenshots'>
+              <div className={HeaderStyle.nItem}>Screenshots</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
-            <Link to='/'>
-              <div>Search User and Banning</div>
+          <div>
+            <Link to='/Search-Banning'>
+              <div className={HeaderStyle.nItem}>Search User and Banning</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
-            <Link to='/'>
-              <div>Hardware ID Banned List</div>
+          <div>
+            <Link to='/HWID-Bannedlist'>
+              <div className={HeaderStyle.nItem}>Hardware ID Banned List</div>
             </Link>
           </div>
-          <div className={HeaderStyle.nItem}>
-            <Link to='/'>
-              <div>Blocked Login Log</div>
+          <div>
+            <Link to='/Blocked-Login'>
+              <div className={HeaderStyle.nItem}>Blocked Login Log</div>
             </Link>
           </div>
           <div className={HeaderStyle.nItem}>
@@ -74,7 +79,7 @@ function App() {
     );
   }
   //routing
-  function HeaderRoute() {
+  function HeaderRoute({ cUser }) {
     return (
       <div>
         <MainHeader />
@@ -84,10 +89,22 @@ function App() {
               <HomePage />
             </Route>
             <Route path='/Add-Item'>
-              <AddItemPage />
+              <AddItemPage theAdmin={cUser} />
             </Route>
             <Route path='/Add-Item-History'>
               <AddItemHistory />
+            </Route>
+            <Route path='/Screenshots'>
+              <ScreenshotsPage />
+            </Route>
+            <Route path='/Search-Banning'>
+              <SearchBanning />
+            </Route>
+            <Route path='/HWID-Bannedlist'>
+              <HwidBan />
+            </Route>
+            <Route path='/Blocked-Login'>
+              <BlockedLogin />
             </Route>
           </Switch>
         </div>
@@ -100,7 +117,7 @@ function App() {
     password: 'admin111',
   };
   //
-  const [cUser, setUser] = useState('');
+
   const [error, setError] = useState('');
   //
   //Login event
@@ -120,9 +137,10 @@ function App() {
   return (
     <div>
       {cUser !== '' ? (
-        <HeaderRoute />
+        <HeaderRoute theAdmin={cUser} />
       ) : (
-        <LoginPage Login={Login} error={error} />
+        <HeaderRoute theAdmin={cUser} />
+        //<LoginPage Login={Login} error={error} />
       )}
     </div>
   );
