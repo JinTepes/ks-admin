@@ -1,0 +1,16 @@
+.parent{
+    margin-top: 3%;
+    padding: 0px 90px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.holder{
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

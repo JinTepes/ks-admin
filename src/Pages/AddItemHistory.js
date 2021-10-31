@@ -31,9 +31,9 @@ function AddItemHistory() {
   return (
     <div className={AddItmHsStyle.pContainer}>
       <div className={AddItmHsStyle.holder}>
-        <div>
-          <label htmlFor='goTo'>Go to Page: </label>
+        <div style={{display: 'flex'}, {flexWrap: 'wrap'}}>
           <input type='text' id='goTo' name='goTo' />
+          <input style={{marginLeft: '15px'}} type='button' id='aihBtn' value='Goto Page' />
         </div>
         <div>
           <table>

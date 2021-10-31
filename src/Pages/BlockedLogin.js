@@ -1,11 +1,12 @@
 import React from 'react';
+import dStyle from '../Layouts/BlockedLoginStyle.module.css';
 
 function BlockedLogin() {
   return (
-    <div className='parent'>
-      <div className='holder'>
-        <div>
-          <h2>Hardware Blocked Login List</h2>
+    <div className={dStyle.parent}>
+      <div className={dStyle.holder}>
+        <div className={dStyle.hInfo}>
+          <h2 style={{alignSelf: 'center'}} >Hardware Blocked Login List</h2>
           <h4>
             This page will list all computers restricted to launch KS game
             client due to HWID banned.
@@ -23,6 +24,17 @@ function BlockedLogin() {
               <th>Blocked Login IP Address</th>
               <th>Referenced Banning Index</th>
               <th>Blocked Login Date</th>
+            </tr>
+            <tr>
+              <td>
+                ip ad
+              </td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+              </td>
+              <td>
+                uis nostrud exercitation
+              </td>
             </tr>
           </table>
         </div>

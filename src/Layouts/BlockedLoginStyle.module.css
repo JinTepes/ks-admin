@@ -1,4 +1,4 @@
-.pContainer{
+.parent{
     margin-top:3%;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,7 @@
     align-items: center;
 }
 
-table{
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-}
-
-th{
-    height: 30px;
-    width: 200px;
+.hInfo{
+    display: flex;
+    flex-direction: column;
 }

@@ -139,8 +139,8 @@ function App() {
       {cUser !== '' ? (
         <HeaderRoute theAdmin={cUser} />
       ) : (
-        <HeaderRoute theAdmin={cUser} />
-        //<LoginPage Login={Login} error={error} />
+        //<HeaderRoute theAdmin={cUser} />
+        <LoginPage Login={Login} error={error} />
       )}
     </div>
   );

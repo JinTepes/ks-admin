@@ -111,7 +111,7 @@
     cursor: pointer;
     padding: 3px 0px;
     margin-top: 10px;
-    background-color: rgba(229,56,59,0.6);
+    background-color: #ced4da;
 }
 
 .delBtn div{
@@ -121,7 +121,7 @@
 }
 
 .delBtn div:hover{
-    background-color: #ffccd5;
+    background-color: rgba(114, 119, 124, 0.8);
 }
 
 .misc1{
