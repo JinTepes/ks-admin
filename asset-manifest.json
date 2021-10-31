@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/JinTepes/ks-admin/static/css/main.36a45d53.chunk.css",
+    "main.js": "/JinTepes/ks-admin/static/js/main.743c01d5.chunk.js",
+    "main.js.map": "/JinTepes/ks-admin/static/js/main.743c01d5.chunk.js.map",
+    "runtime-main.js": "/JinTepes/ks-admin/static/js/runtime-main.3efd0e92.js",
+    "runtime-main.js.map": "/JinTepes/ks-admin/static/js/runtime-main.3efd0e92.js.map",
+    "static/js/2.031fe2d8.chunk.js": "/JinTepes/ks-admin/static/js/2.031fe2d8.chunk.js",
+    "static/js/2.031fe2d8.chunk.js.map": "/JinTepes/ks-admin/static/js/2.031fe2d8.chunk.js.map",
+    "index.html": "/JinTepes/ks-admin/index.html",
+    "precache-manifest.c0e99867863073019d884f87344d1a59.js": "/JinTepes/ks-admin/precache-manifest.c0e99867863073019d884f87344d1a59.js",
+    "service-worker.js": "/JinTepes/ks-admin/service-worker.js",
+    "static/css/main.36a45d53.chunk.css.map": "/JinTepes/ks-admin/static/css/main.36a45d53.chunk.css.map",
+    "static/js/2.031fe2d8.chunk.js.LICENSE.txt": "/JinTepes/ks-admin/static/js/2.031fe2d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3efd0e92.js",
+    "static/js/2.031fe2d8.chunk.js",
+    "static/css/main.36a45d53.chunk.css",
+    "static/js/main.743c01d5.chunk.js"
+  ]
+}
